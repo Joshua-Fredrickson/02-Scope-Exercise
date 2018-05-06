@@ -65,13 +65,15 @@ baz in line 19 is undefined due to it being inside the function bar
 
 
 5. When line 13 invokes the baz function, which foo will be assigned a value of bam? More specifically, bam will be assigned to the foo in ??? scope. Give a brief description in your own words to support your conclusion.
-foo will be assigned baz. because baz is called within the bar function.
+bam is not defined due to scope of "use strict".
 
 6. Which scope, if any, will the variable bam on line 11 be registered to when the first stage of execution occurs on this file? Provide a brief description in your own words to support your conclusion.
-bam is scoped within the function baz.
+Bam is not defined due to the reference Error.
 
 7. For each line, 16 through 19, what is the return value for each?
 function bar is being preformed on line 16.  foo is now = to baz.  function baz is being performed with foo as a parameter. foo is now equal to bam and bam is now equal to yay.
 foo is being called on line 17 and foo is now equal to bar due to global scope.  
 bam in line 18 is undefined due to it being inside the function bar
 baz in line 19 is undefined due to it being inside the function bar
+
+
